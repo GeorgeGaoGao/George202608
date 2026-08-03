@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\George202608\\20260803 01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB5C139D-4CA7-42D5-B1FA-5F03053E0D77}|20260803 01.csproj|e:\\george202608\\20260803 01\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AB5C139D-4CA7-42D5-B1FA-5F03053E0D77}|20260803 01.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1C7142ED-AF4E-CB16-A2DB-D993C3CF44DC}|20260803 01.csproj|e:\\george202608\\20260803 01\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C7142ED-AF4E-CB16-A2DB-D993C3CF44DC}|20260803 01.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB5C139D-4CA7-42D5-B1FA-5F03053E0D77}|20260803 01.csproj|e:\\george202608\\20260803 01\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB5C139D-4CA7-42D5-B1FA-5F03053E0D77}|20260803 01.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C7142ED-AF4E-CB16-A2DB-D993C3CF44DC}|20260803 01.csproj|e:\\george202608\\20260803 01\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C7142ED-AF4E-CB16-A2DB-D993C3CF44DC}|20260803 01.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "E:\\George202608\\20260803 01\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-03T06:53:28.74Z",
               "EditorCaption": ""

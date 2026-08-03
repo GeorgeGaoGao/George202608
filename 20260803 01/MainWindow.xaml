@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button/>
+        <Button Width="200" Height="40" Content="Button" Background="LightBlue" FontSize="20"/>
     </Grid>
 </Window>

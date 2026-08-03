@@ -3,12 +3,10 @@
   "WorkspaceRootPath": "E:\\George202608\\20260803 01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C7142ED-AF4E-CB16-A2DB-D993C3CF44DC}|20260803 01.csproj|e:\\george202608\\20260803 01\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1C7142ED-AF4E-CB16-A2DB-D993C3CF44DC}|20260803 01.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2E55E6AD-5BED-42E9-A7B5-1E49B04304A4}|..\\RoutedEvent\\RoutedEvent.csproj|e:\\george202608\\routedevent\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C7142ED-AF4E-CB16-A2DB-D993C3CF44DC}|20260803 01.csproj|e:\\george202608\\20260803 01\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C7142ED-AF4E-CB16-A2DB-D993C3CF44DC}|20260803 01.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E55E6AD-5BED-42E9-A7B5-1E49B04304A4}|..\\RoutedEvent\\RoutedEvent.csproj|e:\\george202608\\routedevent\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +21,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\George202608\\20260803 01\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "E:\\George202608\\20260803 01\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-03T06:53:29.148Z",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\George202608\\RoutedEvent\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\RoutedEvent\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\George202608\\RoutedEvent\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\RoutedEvent\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAywBYAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T12:25:19.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\George202608\\20260803 01\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "E:\\George202608\\20260803 01\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T06:53:28.74Z",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\George202608\\RoutedEvent\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\RoutedEvent\\MainWindow.xaml",
+              "ToolTip": "E:\\George202608\\RoutedEvent\\MainWindow.xaml",
+              "RelativeToolTip": "..\\RoutedEvent\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-03T12:14:21Z",
               "EditorCaption": ""
             }
           ]

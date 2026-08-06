@@ -1,0 +1,23 @@
+﻿<Window x:Class="RoutedEvent2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoutedEvent2"
+        mc:Ignorable="d" Name="window"
+        Title="MainWindow" Height="450" Width="800"
+        local:TimeButton.ReportTime="ReportTimeHandler">
+    <Grid Name="gridRoot" local:TimeButton.ReportTime="ReportTimeHandler">
+        <Grid Name="secondGrid" local:TimeButton.ReportTime="ReportTimeHandler">
+            <Grid Name="thirdGrid" local:TimeButton.ReportTime="ReportTimeHandler">
+                <StackPanel Name="stackPanel" local:TimeButton.ReportTime="ReportTimeHandler">
+                    <ListBox Name="listBox"/>
+                    <local:TimeButton Content="Report Time" FontSize="30"
+                                      local:TimeButton.ReportTime="ReportTimeHandler"
+                                      x:Name="timeButton" Width="200" Height="200"/>
+                </StackPanel>
+            </Grid>
+            
+        </Grid>
+    </Grid>
+</Window>

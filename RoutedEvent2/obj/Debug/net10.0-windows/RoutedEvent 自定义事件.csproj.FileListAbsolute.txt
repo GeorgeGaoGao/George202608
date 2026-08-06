@@ -1,0 +1,22 @@
+E:\George202608\RoutedEvent2\bin\Debug\net10.0-windows\RoutedEvent 自定义事件.exe
+E:\George202608\RoutedEvent2\bin\Debug\net10.0-windows\RoutedEvent 自定义事件.deps.json
+E:\George202608\RoutedEvent2\bin\Debug\net10.0-windows\RoutedEvent 自定义事件.runtimeconfig.json
+E:\George202608\RoutedEvent2\bin\Debug\net10.0-windows\RoutedEvent 自定义事件.dll
+E:\George202608\RoutedEvent2\bin\Debug\net10.0-windows\RoutedEvent 自定义事件.pdb
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\MainWindow.g.cs
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\App.g.cs
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件_MarkupCompile.cache
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件_MarkupCompile.lref
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\MainWindow.baml
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.g.resources
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.GeneratedMSBuildEditorConfig.editorconfig
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.AssemblyInfoInputs.cache
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.AssemblyInfo.cs
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.csproj.CoreCompileInputs.cache
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.sourcelink.json
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.dll
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\refint\RoutedEvent 自定义事件.dll
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.pdb
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\RoutedEvent 自定义事件.genruntimeconfig.cache
+E:\George202608\RoutedEvent2\obj\Debug\net10.0-windows\ref\RoutedEvent 自定义事件.dll

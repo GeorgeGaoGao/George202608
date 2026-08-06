@@ -1,4 +1,8 @@
 <Solution>
-  <Project Path="../RoutedEvent/RoutedEvent.csproj" Id="2e55e6ad-5bed-42e9-a7b5-1e49b04304a4" />
-  <Project Path="20260803 01.csproj" />
+  <Project Path="../CustomRoutedEvent/02.CustomRoutedEvent.csproj" Id="65e159ea-d1e9-4a06-98de-852c37398e54" />
+  <Project Path="../PasswordBinding/03.PasswordBinding.csproj" Id="7a2b5ff1-5e56-4a65-b995-fd9994fdcb6a" />
+  <Project Path="../RoutedEvent/04.RoutedEvent.csproj" Id="2e55e6ad-5bed-42e9-a7b5-1e49b04304a4" />
+  <Project Path="../RoutedEvent2/05.RoutedEvent 自定义事件.csproj" Id="0f716eb6-7e7a-415b-8596-8539834a05f2" />
+  <Project Path="../StudentNameChanged/06.StudentNameChanged.csproj" Id="79864ac9-533a-4d31-a192-dc6be5753e69" />
+  <Project Path="01.20260803 01.csproj" />
 </Solution>

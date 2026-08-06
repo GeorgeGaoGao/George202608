@@ -10,4 +10,5 @@
   <Project Path="RoutedEvent2/_05.RoutedEvent 自定义事件.csproj" />
   <Project Path="StudentNameChanged/_06.StudentNameChanged.csproj" />
   <Project Path="_10.CommandExample2/_10.CommandExample2.csproj" Id="f8d44cf0-0890-4497-bd71-ea956a9656e0" />
+  <Project Path="_11.Resource/_11.Resource.csproj" Id="02b735a1-2a14-4bde-816c-52951fe8e8aa" />
 </Solution>

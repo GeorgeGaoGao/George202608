@@ -20,7 +20,7 @@ namespace _10.CommandExample2
 
         public string TextContent
         {
-            get { return _textContent; }
+            get => _textContent;
             set
             {
                 if (_textContent != value)

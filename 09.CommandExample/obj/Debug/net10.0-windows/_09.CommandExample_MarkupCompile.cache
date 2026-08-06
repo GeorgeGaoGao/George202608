@@ -1,5 +1,5 @@
 ﻿_09.CommandExample
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_O
 E:\George202608\09.CommandExample\App.xaml
 2439598168
 
-8-979479628
+101123389544
 206702017258
 MainView.xaml;MainWindow.xaml;
 
-False
+True
 

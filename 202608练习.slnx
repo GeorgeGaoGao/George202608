@@ -11,4 +11,6 @@
   <Project Path="StudentNameChanged/_06.StudentNameChanged.csproj" />
   <Project Path="_10.CommandExample2/_10.CommandExample2.csproj" Id="f8d44cf0-0890-4497-bd71-ea956a9656e0" />
   <Project Path="_11.Resource/_11.Resource.csproj" Id="02b735a1-2a14-4bde-816c-52951fe8e8aa" />
+  <Project Path="_12.Slider/_12.Slider.csproj" Id="17ac9e92-a716-4af9-a184-9d221bc4ac51" />
+  <Project Path="_13.ProgressBar/_13.ProgressBar.csproj" Id="d8b1ff20-4b2c-4c26-9055-67d37947be18" />
 </Solution>

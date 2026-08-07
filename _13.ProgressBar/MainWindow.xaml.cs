@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace _13.ProgressBar
 {
@@ -19,7 +20,14 @@ namespace _13.ProgressBar
         public MainWindow()
         {
             InitializeComponent();
-        
+            //Loaded += (s, e) =>
+            //{
+            //    Task.Factory.StartNew(() =>
+            //    {
+            //        Application.Current.Dispatcher.Invoke(() => this.myTextBlock.Text = "stopped by program");
+
+            //    });
+            //};
         }
     }
 }

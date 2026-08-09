@@ -17,4 +17,5 @@
   <Project Path="_14.Calendar/_14.Calendar.csproj" Id="e1976256-9dd5-440e-9050-62801196e748" />
   <Project Path="_20.Review/_20.ReviewCalendar.csproj" Id="add695f1-d7ef-4e16-92b2-1481f7efb836" />
   <Project Path="_21.MediaElementExercise/_21.MediaElementExercise.csproj" Id="2a54fd68-1676-402e-be5b-80dcce841ca6" />
+  <Project Path="_22.CollectionControls/_22.CollectionControls.csproj" Id="5f0b104b-170f-4411-a5d3-39ad0541d967" />
 </Solution>

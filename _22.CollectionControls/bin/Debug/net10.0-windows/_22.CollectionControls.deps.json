@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "_22.CollectionControls/1.0.0": {
+        "runtime": {
+          "_22.CollectionControls.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "_22.CollectionControls/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

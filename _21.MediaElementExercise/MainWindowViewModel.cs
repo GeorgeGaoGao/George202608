@@ -21,7 +21,7 @@ namespace _21.MediaElementExercise
 
         public Visibility BorderVisibility
         {
-            get { return _borderVisibility=Visibility.Visible; }
+            get { return _borderVisibility; }
             set { _borderVisibility = value;OnPropertyChanged(); }
         }
         public ICommand OpenFileCommand { get; set; }
@@ -35,6 +35,7 @@ namespace _21.MediaElementExercise
         private void OnPlayCommand(object obj)
         {
            _mediaElement.Play();
+            BorderVisibility = Visibility.Collapsed;
         }
 
         private string _filePath;
@@ -69,12 +70,12 @@ namespace _21.MediaElementExercise
             if (result==true)
             {
                 _filePath = openFileDialog.FileName;
-                BorderVisibility = Visibility.Collapsed;
+              
             }
             _mediaElement.MediaOpened += _mediaElement_MediaOpened;
             _mediaElement.Source = new System.Uri(_filePath);
             MediaBackgroundText = _filePath;
-
+            BorderVisibility= Visibility.Collapsed;
 
         }
 

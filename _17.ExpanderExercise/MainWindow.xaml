@@ -1,0 +1,27 @@
+﻿<Window x:Class="_17.ExpanderExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_17.ExpanderExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="Expander控件学习"/>
+        <Expander ExpandDirection="Left" Expanded="Expander_Expanded" Collapsed="Expander_Collapsed">
+            <Expander.Header>
+                <Label Content="GeorgeExpander"/>
+            </Expander.Header>
+            <Grid>
+                <TextBlock TextWrapping="Wrap">
+                    据南华早报8月8日报道，美国周五宣布与多家矿业公司达成数项关键矿产协议，
+                    这是美国为削弱中国在战略性矿产生产和加工领域主导地位而采取的最新举措。
+                    美国总统特朗普在国务院出席全球矿业高管圆桌会议时表示，他的政府将确保
+                    美国“永远不再依赖敌对外国，来获取我们国家未来取得主导地位所需要的资源”。
+                    特朗普没有直接点名中国。特朗普补充说：“我们正在让美国矿工重返工作岗位，
+                    也正在夺回美国作为世界矿产超级大国应有的地位。我们正在让采矿业再次伟大。”
+                </TextBlock>
+            </Grid>
+        </Expander>
+    </StackPanel>
+</Window>

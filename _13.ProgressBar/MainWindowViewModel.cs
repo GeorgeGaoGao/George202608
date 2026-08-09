@@ -41,8 +41,8 @@ namespace _13.ProgressBar
                         for (int i = 0; i < 100; i++)
                         {
                             Value = i;
-                            LeftMargin = (int)TotalWidth / 100 * i;
-                            await Task.Delay(1000);
+                            LeftMargin = (int)((TotalWidth-20) / 100.0 * i);
+                            await Task.Delay(100);
                         }
                     }
                     )

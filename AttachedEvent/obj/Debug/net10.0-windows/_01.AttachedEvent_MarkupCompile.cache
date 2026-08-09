@@ -1,5 +1,5 @@
 ﻿_01.AttachedEvent
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_O
 E:\George202608\AttachedEvent\App.xaml
 11407045341
 
-61720862714
+4-231783823
 206702017258
 MainWindow.xaml;
 
-True
+False
 

@@ -20,6 +20,6 @@
             <Rectangle Width="{Binding LeftMargin}"/>
             <TextBlock Name="myTextBlock" Grid.Column="1"   Text="{Binding Value, StringFormat={}{0}%}" HorizontalAlignment="left"/>
         </StackPanel>
-        <ProgressBar Minimum="0" Maximum="100" Value="{Binding Value }"  Margin="10" Height="15"/>
+        <ProgressBar Minimum="0" Maximum="100" Value="{Binding Value }" Margin="10"  Height="15"/>
     </StackPanel>
 </Window>

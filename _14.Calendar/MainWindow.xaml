@@ -1,0 +1,14 @@
+﻿<Window x:Class="_14.Calendar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_14.Calendar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Calendar Name="myCalendar" DisplayDateStart="2026.01.01 00:00:00" DisplayDateEnd="2029-01-01 00:00:00" 
+                  SelectionMode="MultipleRange" Margin="0 15"/>
+        <Button Content="选择" Click="Button_Click"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "_14.Calendar/1.0.0": {
+        "runtime": {
+          "_14.Calendar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "_14.Calendar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

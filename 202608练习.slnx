@@ -5,6 +5,7 @@
   <Project Path="20260803 01/_00.20260803 01.csproj" />
   <Project Path="AttachedEvent/_01.AttachedEvent.csproj" />
   <Project Path="CustomRoutedEvent/_02.CustomRoutedEvent.csproj" />
+  <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" Id="0d6fe6a9-d281-4e88-b280-46963e1e0a5d" />
   <Project Path="PasswordBinding/_03.PasswordBinding.csproj" />
   <Project Path="RoutedEvent/_04.RoutedEvent.csproj" />
   <Project Path="RoutedEvent2/_05.RoutedEvent 自定义事件.csproj" />
@@ -13,4 +14,7 @@
   <Project Path="_11.Resource/_11.Resource.csproj" Id="02b735a1-2a14-4bde-816c-52951fe8e8aa" />
   <Project Path="_12.Slider/_12.Slider.csproj" Id="17ac9e92-a716-4af9-a184-9d221bc4ac51" />
   <Project Path="_13.ProgressBar/_13.ProgressBar.csproj" Id="d8b1ff20-4b2c-4c26-9055-67d37947be18" />
+  <Project Path="_14.Calendar/_14.Calendar.csproj" Id="e1976256-9dd5-440e-9050-62801196e748" />
+  <Project Path="_20.Review/_20.ReviewCalendar.csproj" Id="add695f1-d7ef-4e16-92b2-1481f7efb836" />
+  <Project Path="_21.MediaElementExercise/_21.MediaElementExercise.csproj" Id="2a54fd68-1676-402e-be5b-80dcce841ca6" />
 </Solution>

@@ -14,8 +14,13 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
-
-        <DataGrid Grid.Column="0" Margin="5" SelectionChanged="ListView_SelectionChanged" 
+        <StackPanel>
+            <ComboBox Name="myComboBox1" IsEditable="True" Height="30" Margin="10" TextBoxBase.TextChanged="myComboBox1_TextChanged"/>
+            <ComboBox Name="myComboBox2" ItemsSource="{Binding People}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedPerson}"
+                      StaysOpenOnEdit="True" Height="30" Margin="10" SelectionChanged="myComboBox2_SelectionChanged"/>
+        </StackPanel>
+        
+        <!--<DataGrid Grid.Column="0" Margin="5" SelectionChanged="ListView_SelectionChanged" 
                   AutoGenerateColumns="False"
                   Name="myListView" SelectedItem="{Binding SelectedPerson}" ItemsSource="{Binding People}">
             <DataGrid.Columns>
@@ -23,7 +28,7 @@
                 <DataGridTextColumn Header="地址" Binding="{Binding Address}"/>
                 <DataGridTextColumn Header="年龄" Binding="{Binding Age}"/>
             </DataGrid.Columns>
-        </DataGrid>
+        </DataGrid>-->
         <!--<ListView Grid.Column="0" Margin="5" SelectionChanged="ListView_SelectionChanged" 
                   Name="myListView" SelectedItem="{Binding SelectedPerson}" ItemsSource="{Binding People}">
             <ListView.View>
@@ -46,6 +51,10 @@
             <StackPanel  Orientation="Horizontal">
                 <TextBlock  Text="地址" Width="50"  Height="30" FontSize="20" Margin="5"/>
                 <TextBlock Name="addressTextBlock" Text="{Binding SelectedPerson.Address}"   FontSize="16" VerticalAlignment="Center" Background="LightCoral" />
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock  Text="电话" Width="50"  Height="30" FontSize="20" Margin="5"/>
+                <TextBlock x:Name="phoneTextBlock" Text="{Binding SelectedPerson.Address}"   FontSize="16" VerticalAlignment="Center" Background="LightCoral" />
             </StackPanel>
         </StackPanel>
         

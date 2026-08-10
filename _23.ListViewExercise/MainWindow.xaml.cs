@@ -48,6 +48,17 @@ namespace _23.ListViewExercise
             //ageTextBlock.Text = person.Age.ToString();
             //addressTextBlock.Text = person.Address;
         }
+
+        private void myComboBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var comboBox = sender as ComboBox;
+            this.phoneTextBlock.Text = comboBox.Text;
+        }
+
+        private void myComboBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
     public class Person
     {

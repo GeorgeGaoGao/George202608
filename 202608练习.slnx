@@ -14,12 +14,12 @@
   <Project Path="_11.Resource/_11.Resource.csproj" Id="02b735a1-2a14-4bde-816c-52951fe8e8aa" />
   <Project Path="_12.Slider/_12.Slider.csproj" Id="17ac9e92-a716-4af9-a184-9d221bc4ac51" />
   <Project Path="_13.ProgressBar/_13.ProgressBar.csproj" Id="d8b1ff20-4b2c-4c26-9055-67d37947be18" />
- <Project Path="_14.Calendar/_14.Calendar.csproj" Id="e1976256-9dd5-440e-9050-62801196e748" />
-   <Project Path="_15.CalendarExercise2/_15.CalendarExercise2.csproj" Id="76a6bd7b-b79f-4304-ac0a-fb9c9ff9b3ba" />
+  <Project Path="_15.CalendarExercise2/_15.CalendarExercise2.csproj" Id="76a6bd7b-b79f-4304-ac0a-fb9c9ff9b3ba" />
   <Project Path="_16.DatePickerExercise/_16.DatePickerExercise.csproj" Id="fa72f853-dcd9-4911-9578-ccc43aabebb7" />
   <Project Path="_17.ExpanderExercise/_17.ExpanderExercise.csproj" Id="89ead73b-d47d-46e6-9f52-a1deebfb9971" />
   <Project Path="_18.MediaElementExercise/_18.MediaElementExercise.csproj" Id="a2d121d8-93c5-4bb5-8879-8c8a9855b437" />
   <Project Path="_20.Review/_20.ReviewCalendar.csproj" Id="add695f1-d7ef-4e16-92b2-1481f7efb836" />
   <Project Path="_21.MediaElementExercise/_21.MediaElementExercise.csproj" Id="2a54fd68-1676-402e-be5b-80dcce841ca6" />
   <Project Path="_22.CollectionControls/_22.CollectionControls.csproj" Id="5f0b104b-170f-4411-a5d3-39ad0541d967" />
+  <Project Path="_23.ListViewExercise/_23.ListViewExercise.csproj" Id="60c15a74-6056-4cb7-b9ec-b2612a217a51" />
 </Solution>

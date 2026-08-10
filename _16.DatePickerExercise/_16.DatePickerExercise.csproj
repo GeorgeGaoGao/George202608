@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyWpfDLL\MyWpfDLL.csproj" />
+    <ProjectReference Include="..\GeorgeWpfDLL\GeorgeWpfDLL.csproj" />
   </ItemGroup>
 
 </Project>

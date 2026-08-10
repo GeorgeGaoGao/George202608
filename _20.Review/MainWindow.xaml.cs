@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _14.CalendarExercise
+namespace _20.Review
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -20,7 +20,5 @@ namespace _14.CalendarExercise
         {
             InitializeComponent();
         }
-
-        
     }
 }

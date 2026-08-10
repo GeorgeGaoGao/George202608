@@ -9,11 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.142" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MyWpfDLL\MyWpfDLL.csproj" />
+    <ProjectReference Include="..\GeorgeWpfDLL\GeorgeWpfDLL.csproj" />
   </ItemGroup>
 
 </Project>

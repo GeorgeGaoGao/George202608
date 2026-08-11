@@ -35,32 +35,32 @@ namespace _29.TreeViewExplorer
             OpenFolderDialog openFolderDialog = new OpenFolderDialog();
             if (openFolderDialog.ShowDialog()==true)
             {
-                string selectedPath = openFolderDialog.FolderName;
+                string rootPath = openFolderDialog.FolderName;
                 RootFolder = openFolderDialog.FolderName;
                 TreeViewItem rootNode=new TreeViewItem();
                 rootNode.Header = "Root";
-                LoadSubNodes(rootNode, selectedPath);
+                LoadNodes(rootNode, rootPath);
                 TreeViewItems.Add(rootNode);
             }
         }
 
-        private void LoadSubNodes(TreeViewItem rootNode, string selectedPath)
+        private void LoadNodes(TreeViewItem node, string path)
         {
-            DirectoryInfo directoryInfo = new DirectoryInfo(selectedPath);
+            DirectoryInfo directoryInfo = new DirectoryInfo(path);
             var subDirectoryInfos = directoryInfo.GetDirectories();
             foreach (var subDirectory in subDirectoryInfos)
             {
                 TreeViewItem subNode= new TreeViewItem();
                 subNode.Header= subDirectory.Name;
-                rootNode.Items.Add(subNode);
-                LoadSubNodes(subNode, subDirectory.FullName);
+                node.Items.Add(subNode);
+                LoadNodes(subNode, subDirectory.FullName);
             }
             var subFileInfos=directoryInfo.GetFiles();
             foreach (var file in subFileInfos)
             {
                 TreeViewItem fileNode= new TreeViewItem();
                 fileNode.Header= file.Name;
-                rootNode.Items.Add(fileNode);
+                node.Items.Add(fileNode);
 
             }
         }

@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualBasic;
-using MyWpfDLL;
+﻿using GeorgeWpfDLL;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -108,14 +108,14 @@ namespace _15.CalendarExercise2
         public MainWindowViewModel()
         {
             ButtonShowInfoCommand = new RelayCommand(
-                () =>
+                (o) =>
                 {
                     MessageBox.Show($"共选了ChosenDates.Count天，" +
                         $"\r\n当前SelectedDate为{CurrentSelectedDate}\r\n今天是{DateTime.Now}");
                 }
                 );
             ButtonChangeSelectedDateCommand = new RelayCommand(
-                () =>
+                (o) =>
                 {
                     CurrentSelectedDate = DateTime.Today.AddDays(2);
                 }

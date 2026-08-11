@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_29.TreeViewExplorer"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d" FontSize="20"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
@@ -20,6 +21,13 @@
             <Button Content="Choose Root" Width="130" FontSize="16" Command="{Binding ChooseRootFolderCommand}"/>
 
         </StackPanel>
-        <TreeView Grid.Row="1" ItemsSource="{Binding TreeViewItems}"/>
+        <TreeView Name="myTreeView" Grid.Row="1" ItemsSource="{Binding TreeViewItems}" >
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectedItemChanged">
+                    <i:InvokeCommandAction Command="{Binding TreeViewSelectedChangedCommand}" CommandParameter="{Binding ElementName=myTreeView}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </TreeView>
+
     </Grid>
 </Window>

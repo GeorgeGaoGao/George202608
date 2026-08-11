@@ -22,4 +22,10 @@
   <Project Path="_21.MediaElementExercise/_21.MediaElementExercise.csproj" Id="2a54fd68-1676-402e-be5b-80dcce841ca6" />
   <Project Path="_22.CollectionControls/_22.CollectionControls.csproj" Id="5f0b104b-170f-4411-a5d3-39ad0541d967" />
   <Project Path="_23.ListViewExercise/_23.ListViewExercise.csproj" Id="60c15a74-6056-4cb7-b9ec-b2612a217a51" />
+  <Project Path="_24.AttributeExercise/_24.AttributeExercise.csproj" Id="03d4f5d7-787a-4971-912c-cf8f4e07348e" />
+  <Project Path="_25.HeroExercise/_25.HeroExercise.csproj" Id="ccae33b8-68af-4322-bed2-f784c89e4767" />
+  <Project Path="_26.HeroDll/_26.HeroDll.csproj" Id="2016eafe-b659-4e3b-a87f-3bd776c9a2e9" />
+  <Project Path="_27.TabControlExercise/_27.TabControlExercise.csproj" Id="07836e20-0e9f-48ba-a4e6-500b220caea7" />
+  <Project Path="_28.TreeViewExercise/_28.TreeViewExercise.csproj" Id="34a9cbad-ad07-48f0-92ec-61dbb9cfd991" />
+  <Project Path="_29.TreeViewExplorer/_29.TreeViewExplorer.csproj" Id="72fcd326-c5be-4de7-868d-c6bd9dbc4ec5" />
 </Solution>

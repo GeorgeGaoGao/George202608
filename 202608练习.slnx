@@ -29,4 +29,9 @@
   <Project Path="_28.TreeViewExercise/_28.TreeViewExercise.csproj" Id="34a9cbad-ad07-48f0-92ec-61dbb9cfd991" />
   <Project Path="_29.TreeViewExplorer/_29.TreeViewExplorer.csproj" Id="72fcd326-c5be-4de7-868d-c6bd9dbc4ec5" />
   <Project Path="_30.MenuExercise/_30.MenuExercise.csproj" Id="a1c2091b-07e9-4434-a704-0fe3baf2368f" />
+  <Project Path="_31.MenuContextExercise/_31.MenuContextExercise.csproj" Id="e1548c5a-cadd-4f73-b800-56fabccf9381" />
+  <Project Path="_32.StatusBarExercise/_32.StatusBarExercise.csproj" Id="8ce6bc2f-5281-4692-8108-cdb59b346521" />
+  <Project Path="_33.EllipseExercise/_33.EllipseExercise.csproj" Id="defc474f-b55b-4d6d-ba7b-be387ce8707a" />
+  <Project Path="_34.PolyLineExercise/_34.PolyLineExercise.csproj" Id="3245bb80-42a5-402a-9d2e-2c856beb126c" />
+  <Project Path="_35.PathExercise/_35.PathExercise.csproj" Id="87743aff-9a0c-4975-a964-175a5b1cd59e" />
 </Solution>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeorgeWpfDLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -38,26 +39,28 @@ namespace _16.DatePickerExercise
             CalculateDatesCommand = new RelayCommand(OnCalculateDatesCommand);
         }
 
-        private void OnCalculateDatesCommand()
+        private void OnCalculateDatesCommand(object obj)
         {
-            if (StartDate==null||EndDate==null)
+            if (StartDate == null || EndDate == null)
             {
                 MessageBox.Show($"startdate or enddate cannot be empty");
                 return;
             }
             var startDate = StartDate.Value.Date;
-            var endDate= EndDate.Value.Date;
+            var endDate = EndDate.Value.Date;
 
-            if (startDate>endDate)
+            if (startDate > endDate)
             {
                 DateTime temp = startDate;
                 startDate = endDate;
                 endDate = temp;
             }
 
-            int totalDays = (endDate - startDate).Days+1;
+            int totalDays = (endDate - startDate).Days + 1;
 
             MessageBox.Show($"startdate:{StartDate}\r\nenddate:{EndDate}\r\ntotoldays:{totalDays}");
         }
+
+       
     }
 }

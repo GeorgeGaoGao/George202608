@@ -23,5 +23,39 @@
                 <EllipseGeometry Center="100 100" RadiusX="100" RadiusY="50"/>
             </Path.Data>
         </Path>
+        <Path Name="myPath"  StrokeThickness="3">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="100 100">
+                        <LineSegment Point="500 100"/>
+                        <ArcSegment Point="550 150" Size="50 25" SweepDirection="Clockwise" IsLargeArc="False"/>
+                    </PathFigure>
+                    <PathFigure StartPoint="200 200">
+                        <LineSegment Point="300 300"/>
+                        <LineSegment Point="400 200"/>
+                        <LineSegment Point="600 420"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+            <Path.Stroke>
+                <LinearGradientBrush StartPoint="100 100" EndPoint="550 150" MappingMode="Absolute">
+                    <GradientStop Offset="0" Color="Yellow"/>
+                    <GradientStop Offset="0.5" Color="Red"/>
+                    <GradientStop Offset="1" Color="Green"/>
+                </LinearGradientBrush>
+            </Path.Stroke>
+        </Path>
+        <Path Stroke="Blue" StrokeThickness="3">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="100 100">
+                        <BezierSegment Point1="300 100" Point2="200 400" Point3="400 400"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        <Path Stroke="Orange" StrokeThickness="4" Data="M 100 100 C300 100 200 400 400 400">
+           
+        </Path>
     </Grid>
 </Window>

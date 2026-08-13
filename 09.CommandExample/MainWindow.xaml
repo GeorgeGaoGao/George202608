@@ -11,6 +11,6 @@
     </Window.DataContext>
     <StackPanel Margin="5">
         <Button Content="Clear Text" Height="40" Command="{Binding ClearCommand}"/>
-        <TextBox Height="150" Text="{Binding TextBoxContent,UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Height="150" Text="{Binding Content,UpdateSourceTrigger=PropertyChanged}" />
     </StackPanel>
 </Window>

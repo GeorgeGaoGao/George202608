@@ -21,7 +21,7 @@ namespace CustomRoutedEvent
         {
             InitializeComponent();
         }
-        private void ReportTimeHandler(object sender, ReportTimeEVentArgs e)
+        private void ReportTimeHandler(object sender, ReportTimeEventArgs e)
         {
             FrameworkElement element = (sender as FrameworkElement)!;
             e.ClickTime = DateTime.Now;
@@ -29,35 +29,70 @@ namespace CustomRoutedEvent
             string content = $"{timeString}到达{element.Name}";
             this.listBox.Items.Add(content);
         }
+
+       
     }
+
     public class TimeButton : Button
     {
-        //注册
-        public static readonly RoutedEvent ReportTimeEvent=
-            EventManager.RegisterRoutedEvent("ReportTime",RoutingStrategy.Bubble,
-                typeof(EventHandler<ReportTimeEVentArgs>),typeof(TimeButton));
+        //注册路由事件
+        public static readonly RoutedEvent ReportTimeEvent =
+            EventManager.RegisterRoutedEvent("ReportTime", RoutingStrategy.Bubble,
+            typeof(EventHandler<ReportTimeEventArgs>), typeof(TimeButton));
         //包装CLR事件
         public event RoutedEventHandler ReportTime
         {
-            add { this.AddHandler(ReportTimeEvent,value); }
-            remove { this.RemoveHandler(ReportTimeEvent,value); }
+            add { this.AddHandler(ReportTimeEvent, value); }
+            remove { this.RemoveHandler(ReportTimeEvent, value); }
         }
         //激发程序
         protected override void OnClick()
         {
             base.OnClick();
-            ReportTimeEVentArgs e = new ReportTimeEVentArgs(ReportTimeEvent,this);
+            ReportTimeEventArgs e = new ReportTimeEventArgs(ReportTimeEvent, this);
             this.RaiseEvent(e);
         }
     }
-
-    public class ReportTimeEVentArgs:RoutedEventArgs
+    public class ReportTimeEventArgs : RoutedEventArgs
     {
-        public ReportTimeEVentArgs(RoutedEvent routedEvent, object source) : base(routedEvent, source)
+        public ReportTimeEventArgs(RoutedEvent routedEvent, object source) : base(routedEvent, source)
         {
+
         }
-
-        public DateTime ClickTime {  get; set; }
-
+        public DateTime ClickTime { get; set; }
     }
+
+
+
+
+    //public class TimeButton : Button
+    //{
+    //    //注册
+    //    public static readonly RoutedEvent ReportTimeEvent =
+    //        EventManager.RegisterRoutedEvent("ReportTime", RoutingStrategy.Bubble,
+    //            typeof(EventHandler<ReportTimeEVentArgs>), typeof(TimeButton));
+    //    //包装CLR事件
+    //    public event RoutedEventHandler ReportTime
+    //    {
+    //        add { this.AddHandler(ReportTimeEvent, value); }
+    //        remove { this.RemoveHandler(ReportTimeEvent, value); }
+    //    }
+    //    //激发程序
+    //    protected override void OnClick()
+    //    {
+    //        base.OnClick();
+    //        ReportTimeEVentArgs e = new ReportTimeEVentArgs(ReportTimeEvent, this);
+    //        this.RaiseEvent(e);
+    //    }
+    //}
+
+    //public class ReportTimeEVentArgs : RoutedEventArgs
+    //{
+    //    public ReportTimeEVentArgs(RoutedEvent routedEvent, object source) : base(routedEvent, source)
+    //    {
+    //    }
+
+    //    public DateTime ClickTime { get; set; }
+
+    //}
 }

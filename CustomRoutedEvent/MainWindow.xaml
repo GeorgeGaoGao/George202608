@@ -4,14 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CustomRoutedEvent"
-        mc:Ignorable="d"
+        mc:Ignorable="d" local:TimeButton.ReportTime="ReportTimeHandler"
         Title="MainWindow" Height="450" Width="800"
-        Name="rootWindow"
-        local:TimeButton.ReportTime="ReportTimeHandler">
+        Name="rootWindow">
     <Grid Name="rootGrid">
         <Grid Name="secondGrid">
             <Grid Name="thirdGrid">
-                <StackPanel Name="stackPanel" local:TimeButton.ReportTime="ReportTimeHandler">
+                <StackPanel Name="stackPanel" >
                      <ListBox Name="listBox"/>
                 <local:TimeButton Width="200" Height="200" Content="report time" FontSize="20"/>
                 </StackPanel>

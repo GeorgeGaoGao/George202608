@@ -17,7 +17,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
             <TextBlock Text="HeroList"/>
-            <ListBox Name="heroListBox" ItemsSource="{Binding HeroTypes}" SelectedItem="{Binding SelectedHero}" 
+            <ListBox Name="heroListBox" ItemsSource="{Binding  HeroTypes}" SelectedItem="{Binding  SelectedHero}" 
                      DisplayMemberPath="Name" Margin="10" Grid.Column="0">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="SelectionChanged">

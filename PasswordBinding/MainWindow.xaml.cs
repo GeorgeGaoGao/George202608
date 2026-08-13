@@ -27,7 +27,7 @@ namespace PasswordBinding
         public MainWindow()
         {
             InitializeComponent();
-            this.Pass = "123456";
+            this.Pass = "1236";
             this.DataContext = this;
         }
     }

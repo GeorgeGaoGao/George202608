@@ -7,6 +7,8 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Windows;
+using System.Windows.Data;
 using System.Windows.Input;
 
 namespace _25.HeroExercise
@@ -28,6 +30,9 @@ namespace _25.HeroExercise
             GetAllHeroes();
             HeroesSelectionChangedCommand = new RelayCommand(OnHeroesSelectionChangedCommand);
             SkillDoubleClickCommand = new RelayCommand(OnSkillDoubleClickCommand);
+
+            var path = new PropertyPath("SelectedHero");
+            BindingOperations
         }
 
         private void OnSkillDoubleClickCommand(object obj)

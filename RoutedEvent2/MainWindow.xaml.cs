@@ -39,7 +39,7 @@ namespace RoutedEvent2
         public static readonly RoutedEvent ReportTimeEvent = 
             EventManager.RegisterRoutedEvent("ReportTime", RoutingStrategy.Bubble, 
                 typeof(EventHandler<ReportTimeEventArgs>), typeof(TimeButton));
-        public event RoutedEventHandler ReportTime
+        public event EventHandler<ReportTimeEventArgs> ReportTime
         {
             add { this.AddHandler(ReportTimeEvent, value); }
             remove { this.RemoveHandler(ReportTimeEvent, value); }

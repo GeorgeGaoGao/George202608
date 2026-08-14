@@ -35,4 +35,5 @@
   <Project Path="_34.PolyLineExercise/_34.PolyLineExercise.csproj" Id="3245bb80-42a5-402a-9d2e-2c856beb126c" />
   <Project Path="_35.PathExercise/_35.PathExercise.csproj" Id="87743aff-9a0c-4975-a964-175a5b1cd59e" />
   <Project Path="_36.INotifyCollectionChangedExercise/_36.INotifyCollectionChangedExercise.csproj" Id="d5103fbc-88c3-4050-adf3-fa1dc32038ba" />
+  <Project Path="_37.StartupUriExercise/_37.StartupUriExercise.csproj" Id="f204ae08-6721-4d87-a877-9955eb6526e4" />
 </Solution>

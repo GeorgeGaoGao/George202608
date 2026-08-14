@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace _36.INotifyCollectionChangedExercise
+namespace _37.StartupUriExercise
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -12,8 +12,9 @@ namespace _36.INotifyCollectionChangedExercise
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            Uri uri=new Uri("MainWindow.xaml",UriKind.Relative);
-            this.StartupUri = uri;
+            Uri uri = new Uri("Shell.xaml",UriKind.Relative);
+            this.StartupUri= uri;
+
         }
     }
 

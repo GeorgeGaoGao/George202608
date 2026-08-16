@@ -12,8 +12,8 @@ namespace _37.StartupUriExercise
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            Uri uri = new Uri("Shell.xaml",UriKind.Relative);
-            this.StartupUri= uri;
+            //Uri uri = new Uri("Shell.xaml", UriKind.Relative);
+            //this.StartupUri = uri;
 
         }
     }

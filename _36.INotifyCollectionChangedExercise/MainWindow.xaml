@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_36.INotifyCollectionChangedExercise"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d" 
-        Title="MainWindow" Height="450" Width="800">
+        Title="{Binding Path=People}" Height="450" Width="800">
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>

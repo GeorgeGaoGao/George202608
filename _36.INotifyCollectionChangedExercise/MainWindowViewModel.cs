@@ -38,15 +38,21 @@ namespace _36.INotifyCollectionChangedExercise
 
         private void LoadPeopleFromFile(object obj)
         {
+
            string appDirectory=AppDomain.CurrentDomain.BaseDirectory;
             string filePath = Path.Combine(appDirectory, "People.txt");
-            string peopleJson=File.ReadAllText(filePath);
-            ObservableCollection<Person> savedPeople = JsonConvert.DeserializeObject<ObservableCollection<Person>>(peopleJson);
-            People.Clear();
-            foreach (var item in savedPeople)
+            if (File.Exists(filePath))
             {
-                People.Add(item);
+                string peopleJson = File.ReadAllText(filePath);
+                ObservableCollection<Person> savedPeople = JsonConvert.DeserializeObject<ObservableCollection<Person>>(peopleJson);
+                People.Clear();
+                foreach (var item in savedPeople)
+                {
+                    People.Add(item);
+                }
             }
+
+           
         }
 
         private void SavePeopleToFile(object obj)

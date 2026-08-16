@@ -1,34 +1,36 @@
 <Solution>
-  <Project Path="07.CommandExercise/_07.CommandExercise.csproj" Id="5dc05b94-3a5a-4ea3-b428-bfff12f5d243" />
-  <Project Path="08.UsingCommandParameter/_08.UsingCommandParameter.csproj" Id="bf7335e9-c1fc-4bed-8d0b-c888c5637145" />
-  <Project Path="09.CommandExample/_09.CommandExample.csproj" Id="fa048d52-7b76-467e-815b-9f5f915ed67b" />
-  <Project Path="20260803 01/_00.20260803 01.csproj" />
-  <Project Path="AttachedEvent/_01.AttachedEvent.csproj" />
-  <Project Path="CustomRoutedEvent/_02.CustomRoutedEvent.csproj" />
+  <Folder Name="/前30个/">
+    <Project Path="07.CommandExercise/_07.CommandExercise.csproj" Id="5dc05b94-3a5a-4ea3-b428-bfff12f5d243" />
+    <Project Path="08.UsingCommandParameter/_08.UsingCommandParameter.csproj" Id="bf7335e9-c1fc-4bed-8d0b-c888c5637145" />
+    <Project Path="09.CommandExample/_09.CommandExample.csproj" Id="fa048d52-7b76-467e-815b-9f5f915ed67b" />
+    <Project Path="20260803 01/_00.20260803 01.csproj" />
+    <Project Path="AttachedEvent/_01.AttachedEvent.csproj" />
+    <Project Path="CustomRoutedEvent/_02.CustomRoutedEvent.csproj" />
+    <Project Path="PasswordBinding/_03.PasswordBinding.csproj" />
+    <Project Path="RoutedEvent/_04.RoutedEvent.csproj" />
+    <Project Path="RoutedEvent2/_05.RoutedEvent 自定义事件.csproj" />
+    <Project Path="StudentNameChanged/_06.StudentNameChanged.csproj" />
+    <Project Path="_10.CommandExample2/_10.CommandExample2.csproj" Id="f8d44cf0-0890-4497-bd71-ea956a9656e0" />
+    <Project Path="_11.Resource/_11.Resource.csproj" Id="02b735a1-2a14-4bde-816c-52951fe8e8aa" />
+    <Project Path="_12.Slider/_12.Slider.csproj" Id="17ac9e92-a716-4af9-a184-9d221bc4ac51" />
+    <Project Path="_13.ProgressBar/_13.ProgressBar.csproj" Id="d8b1ff20-4b2c-4c26-9055-67d37947be18" />
+    <Project Path="_15.CalendarExercise2/_15.CalendarExercise2.csproj" Id="76a6bd7b-b79f-4304-ac0a-fb9c9ff9b3ba" />
+    <Project Path="_16.DatePickerExercise/_16.DatePickerExercise.csproj" Id="fa72f853-dcd9-4911-9578-ccc43aabebb7" />
+    <Project Path="_17.ExpanderExercise/_17.ExpanderExercise.csproj" Id="89ead73b-d47d-46e6-9f52-a1deebfb9971" />
+    <Project Path="_18.MediaElementExercise/_18.MediaElementExercise.csproj" Id="a2d121d8-93c5-4bb5-8879-8c8a9855b437" />
+    <Project Path="_20.Review/_20.ReviewCalendar.csproj" Id="add695f1-d7ef-4e16-92b2-1481f7efb836" />
+    <Project Path="_21.MediaElementExercise/_21.MediaElementExercise.csproj" Id="2a54fd68-1676-402e-be5b-80dcce841ca6" />
+    <Project Path="_22.CollectionControls/_22.CollectionControls.csproj" Id="5f0b104b-170f-4411-a5d3-39ad0541d967" />
+    <Project Path="_23.ListViewExercise/_23.ListViewExercise.csproj" Id="60c15a74-6056-4cb7-b9ec-b2612a217a51" />
+    <Project Path="_24.AttributeExercise/_24.AttributeExercise.csproj" Id="03d4f5d7-787a-4971-912c-cf8f4e07348e" />
+    <Project Path="_25.HeroExercise/_25.HeroExercise.csproj" Id="ccae33b8-68af-4322-bed2-f784c89e4767" />
+    <Project Path="_26.HeroDll/_26.HeroDll.csproj" Id="2016eafe-b659-4e3b-a87f-3bd776c9a2e9" />
+    <Project Path="_27.TabControlExercise/_27.TabControlExercise.csproj" Id="07836e20-0e9f-48ba-a4e6-500b220caea7" />
+    <Project Path="_28.TreeViewExercise/_28.TreeViewExercise.csproj" Id="34a9cbad-ad07-48f0-92ec-61dbb9cfd991" />
+    <Project Path="_29.TreeViewExplorer/_29.TreeViewExplorer.csproj" Id="72fcd326-c5be-4de7-868d-c6bd9dbc4ec5" />
+    <Project Path="_30.MenuExercise/_30.MenuExercise.csproj" Id="a1c2091b-07e9-4434-a704-0fe3baf2368f" />
+  </Folder>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" Id="0d6fe6a9-d281-4e88-b280-46963e1e0a5d" />
-  <Project Path="PasswordBinding/_03.PasswordBinding.csproj" />
-  <Project Path="RoutedEvent/_04.RoutedEvent.csproj" />
-  <Project Path="RoutedEvent2/_05.RoutedEvent 自定义事件.csproj" />
-  <Project Path="StudentNameChanged/_06.StudentNameChanged.csproj" />
-  <Project Path="_10.CommandExample2/_10.CommandExample2.csproj" Id="f8d44cf0-0890-4497-bd71-ea956a9656e0" />
-  <Project Path="_11.Resource/_11.Resource.csproj" Id="02b735a1-2a14-4bde-816c-52951fe8e8aa" />
-  <Project Path="_12.Slider/_12.Slider.csproj" Id="17ac9e92-a716-4af9-a184-9d221bc4ac51" />
-  <Project Path="_13.ProgressBar/_13.ProgressBar.csproj" Id="d8b1ff20-4b2c-4c26-9055-67d37947be18" />
-  <Project Path="_15.CalendarExercise2/_15.CalendarExercise2.csproj" Id="76a6bd7b-b79f-4304-ac0a-fb9c9ff9b3ba" />
-  <Project Path="_16.DatePickerExercise/_16.DatePickerExercise.csproj" Id="fa72f853-dcd9-4911-9578-ccc43aabebb7" />
-  <Project Path="_17.ExpanderExercise/_17.ExpanderExercise.csproj" Id="89ead73b-d47d-46e6-9f52-a1deebfb9971" />
-  <Project Path="_18.MediaElementExercise/_18.MediaElementExercise.csproj" Id="a2d121d8-93c5-4bb5-8879-8c8a9855b437" />
-  <Project Path="_20.Review/_20.ReviewCalendar.csproj" Id="add695f1-d7ef-4e16-92b2-1481f7efb836" />
-  <Project Path="_21.MediaElementExercise/_21.MediaElementExercise.csproj" Id="2a54fd68-1676-402e-be5b-80dcce841ca6" />
-  <Project Path="_22.CollectionControls/_22.CollectionControls.csproj" Id="5f0b104b-170f-4411-a5d3-39ad0541d967" />
-  <Project Path="_23.ListViewExercise/_23.ListViewExercise.csproj" Id="60c15a74-6056-4cb7-b9ec-b2612a217a51" />
-  <Project Path="_24.AttributeExercise/_24.AttributeExercise.csproj" Id="03d4f5d7-787a-4971-912c-cf8f4e07348e" />
-  <Project Path="_25.HeroExercise/_25.HeroExercise.csproj" Id="ccae33b8-68af-4322-bed2-f784c89e4767" />
-  <Project Path="_26.HeroDll/_26.HeroDll.csproj" Id="2016eafe-b659-4e3b-a87f-3bd776c9a2e9" />
-  <Project Path="_27.TabControlExercise/_27.TabControlExercise.csproj" Id="07836e20-0e9f-48ba-a4e6-500b220caea7" />
-  <Project Path="_28.TreeViewExercise/_28.TreeViewExercise.csproj" Id="34a9cbad-ad07-48f0-92ec-61dbb9cfd991" />
-  <Project Path="_29.TreeViewExplorer/_29.TreeViewExplorer.csproj" Id="72fcd326-c5be-4de7-868d-c6bd9dbc4ec5" />
-  <Project Path="_30.MenuExercise/_30.MenuExercise.csproj" Id="a1c2091b-07e9-4434-a704-0fe3baf2368f" />
   <Project Path="_31.MenuContextExercise/_31.MenuContextExercise.csproj" Id="e1548c5a-cadd-4f73-b800-56fabccf9381" />
   <Project Path="_32.StatusBarExercise/_32.StatusBarExercise.csproj" Id="8ce6bc2f-5281-4692-8108-cdb59b346521" />
   <Project Path="_33.EllipseExercise/_33.EllipseExercise.csproj" Id="defc474f-b55b-4d6d-ba7b-be387ce8707a" />
@@ -36,4 +38,9 @@
   <Project Path="_35.PathExercise/_35.PathExercise.csproj" Id="87743aff-9a0c-4975-a964-175a5b1cd59e" />
   <Project Path="_36.INotifyCollectionChangedExercise/_36.INotifyCollectionChangedExercise.csproj" Id="d5103fbc-88c3-4050-adf3-fa1dc32038ba" />
   <Project Path="_37.StartupUriExercise/_37.StartupUriExercise.csproj" Id="f204ae08-6721-4d87-a877-9955eb6526e4" />
+  <Project Path="_38.ValidationRulesReview/_38.ValidationRulesReview.csproj" Id="10189552-345f-47f6-90df-8b758fbfe417" />
+  <Project Path="_39.ResourcesExercise/_39.ResourcesExercise.csproj" Id="d80a7ed9-5d3d-412a-996e-9dce3b67ed06" />
+  <Project Path="_40.ControlTemplateDataTemplateExercise/_40.ControlTemplateDataTemplateExercise.csproj" Id="446f9e6e-6d05-4f33-8e9d-6ce186b0db01" />
+  <Project Path="_41.TriggerExercise/_41.TriggerExercise.csproj" Id="b9dec8aa-1256-4a69-a30b-2fb544e9de53" />
+  <Project Path="_42.DataTriggerExercise/_42.DataTriggerExercise.csproj" Id="4387d0b5-733d-479a-acc1-c161235f755f" />
 </Solution>

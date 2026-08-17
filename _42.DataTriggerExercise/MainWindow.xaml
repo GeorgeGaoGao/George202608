@@ -4,48 +4,156 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_42.DataTriggerExercise"
-        mc:Ignorable="d"
+        mc:Ignorable="d" 
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <DataGrid ItemsSource="{Binding People}" 
+    <Window.Resources>
+        <Storyboard x:Key="OnToggleButtonChecked">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                           Storyboard.TargetName="myLeftBorder">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="onToggleButtonUnchecked">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                           Storyboard.TargetName="myLeftBorder">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="120"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ToggleButton.Checked" SourceName="myCheckBox">
+            <EventTrigger.Actions>
+                <BeginStoryboard Storyboard="{StaticResource OnToggleButtonChecked}"/>
+            </EventTrigger.Actions>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ToggleButton.Unchecked" SourceName="myCheckBox">
+            <EventTrigger.Actions>
+                <BeginStoryboard Storyboard="{StaticResource onToggleButtonUnchecked}"/>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <DataGrid ItemsSource="{Binding People}" 
                   SelectedItem="{Binding SelectedPerson}"
                   AutoGenerateColumns="False"
                   CanUserAddRows="False" Margin="10">
-            <DataGrid.RowStyle>
-                <Style TargetType="DataGridRow">
-                    <Style.Triggers>
-                        <DataTrigger Binding="{Binding Age}" Value="30">
-                            <Setter Property="Background" Value="Green"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding Age}" Value="45">
-                            <Setter Property="Background" Value="Red"/>
-                        </DataTrigger>
-                    </Style.Triggers>
-                </Style>
-            </DataGrid.RowStyle>
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="姓名" Binding="{Binding Name}"/>
-                <DataGridTextColumn Header="年龄" Binding="{Binding Age}"/>
-                <DataGridTextColumn Header="地址" Binding="{Binding Address}"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <StackPanel Grid.Column="1" Orientation="Vertical">
-            <TextBlock Text="Name ">
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Age}" Value="30">
+                                <Setter Property="Background" Value="Green"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Age}" Value="45">
+                                <Setter Property="Background" Value="Red"/>
+                            </DataTrigger>
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding Name}" Value="YangGuo"/>
+                                    <Condition Binding="{Binding Age}" Value="30"/>
+                                </MultiDataTrigger.Conditions>
+                                <MultiDataTrigger.Setters>
+                                    <Setter Property="Background" Value="Gold"/>
+                                </MultiDataTrigger.Setters>
+                            </MultiDataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="姓名" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="年龄" Binding="{Binding Age}"/>
+                    <DataGridTextColumn Header="地址" Binding="{Binding Address}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel  Grid.Column="1" Orientation="Vertical">
+                <TextBlock Text="Name ">
 <Run Text="{Binding SelectedPerson.Name}"/>
-            </TextBlock>
-            <TextBlock Text="Age ">
+                </TextBlock>
+                <TextBlock Text="Age ">
                 <Run Text="{Binding SelectedPerson.Age}"/>
-            </TextBlock>
-            <TextBlock Text="Address ">
+                </TextBlock>
+                <TextBlock Text="Address ">
                 <Run Text="{Binding SelectedPerson.Address}"/>
-            </TextBlock>
-        </StackPanel>
-    </Grid>
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Name="myLeftBorder" Grid.Row="1" Grid.Column="0" Background="LightCyan">
+                <TextBlock  Text="菜单区域" FontSize="30"
+            VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </Border>
+
+            <Border Name="myRightBorder" Grid.Row="1" Grid.Column="1">
+                <CheckBox Width="100" Height="100" Name="myCheckBox"
+           VerticalAlignment="Center"  HorizontalAlignment="Center">
+                    <CheckBox.Style>
+                        <Style TargetType="CheckBox">
+                            <Setter Property="Background" Value="LightGreen"/>
+                            <Setter Property="Content" Value="开"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="CheckBox">
+                                        <Border Width="{TemplateBinding Width}"
+                                 Height="{TemplateBinding Height}"
+                                 Background="{TemplateBinding Background}"
+                                 CornerRadius="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Width}">
+                                            <TextBlock Text="{TemplateBinding Content}" 
+                                        FontSize="30"
+                                        VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </Border>
+
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsChecked" Value="True">
+                                    <Setter Property="Background" Value="red"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Content" Value="关"/>
+                                </Trigger>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <EventTrigger.Actions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimation Duration="0:0:0.300" To="120" Storyboard.TargetProperty="Width"/>
+                                                <DoubleAnimation Duration="0:0:0.300" To="120" Storyboard.TargetProperty="Height"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger.Actions>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <EventTrigger.Actions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimation Duration="0:0:0.300"  To="100" Storyboard.TargetProperty="Width"/>
+                                                <DoubleAnimation Duration="0:0:0.300"  To="100" Storyboard.TargetProperty="Height"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger.Actions>
+                                </EventTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </CheckBox.Style>
+                </CheckBox>
+            </Border>
+        </Grid>
+    </StackPanel>
+
+
+
 </Window>

@@ -49,4 +49,5 @@
   <Project Path="_46.TreeViewExercise/_46.TreeViewExercise.csproj" Id="04dc8de3-f3ef-468e-bce1-6640ba2d965b" />
   <Project Path="_47.VisualTreeExercise/_47.VisualTreeExercise.csproj" Id="b372972f-9d7c-4d08-bd93-c5e783be4248" />
   <Project Path="_48.ControlTemplateExercise/_48.ControlTemplateExercise.csproj" Id="820ebcd1-cf25-4150-a658-045af384a746" />
+  <Project Path="_49.TemplateBindingExercise/_49.TemplateBindingExercise.csproj" Id="bc3dde49-3f6f-4293-977a-b29dc6395553" />
 </Solution>

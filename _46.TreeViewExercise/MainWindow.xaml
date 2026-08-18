@@ -1,0 +1,21 @@
+﻿<Window x:Class="_46.TreeViewExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_46.TreeViewExercise"
+        mc:Ignorable="d" FontSize="20"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Name="myLeftBorder" Width="188" Grid.Column="0" Background="LightCyan" >
+            <Button Content="当前逻辑树" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
+        </Border>
+        <Border Name="myRightBorder" Grid.Column="1" >
+            <TreeView Name="myTreeView" Margin="10"/>
+        </Border>
+    </Grid>
+</Window>

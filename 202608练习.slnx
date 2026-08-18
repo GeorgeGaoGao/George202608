@@ -43,4 +43,10 @@
   <Project Path="_40.ControlTemplateDataTemplateExercise/_40.ControlTemplateDataTemplateExercise.csproj" Id="446f9e6e-6d05-4f33-8e9d-6ce186b0db01" />
   <Project Path="_41.TriggerExercise/_41.TriggerExercise.csproj" Id="b9dec8aa-1256-4a69-a30b-2fb544e9de53" />
   <Project Path="_42.DataTriggerExercise/_42.DataTriggerExercise.csproj" Id="4387d0b5-733d-479a-acc1-c161235f755f" />
+  <Project Path="_43.EventTriggerExercise/_43.EventTriggerExercise.csproj" Id="402b99a9-9732-4b32-bbf8-6882dff8f183" />
+  <Project Path="_44.DataTriggerExercise2/_44.DataTriggerExercise2.csproj" Id="134532a4-855b-438f-9a29-47f4110a2499" />
+  <Project Path="_45.EventTriggerExercise2/_45.EventTriggerExercise2.csproj" Id="c14f121e-4066-4ce1-a83a-d091d493cc51" />
+  <Project Path="_46.TreeViewExercise/_46.TreeViewExercise.csproj" Id="04dc8de3-f3ef-468e-bce1-6640ba2d965b" />
+  <Project Path="_47.VisualTreeExercise/_47.VisualTreeExercise.csproj" Id="b372972f-9d7c-4d08-bd93-c5e783be4248" />
+  <Project Path="_48.ControlTemplateExercise/_48.ControlTemplateExercise.csproj" Id="820ebcd1-cf25-4150-a658-045af384a746" />
 </Solution>

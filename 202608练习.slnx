@@ -51,4 +51,5 @@
     <Project Path="_50.DataTemplateExercise/_50.DataTemplateExercise.csproj" Id="e26aa77c-86cb-4202-ac30-692daea9fcd4" />
   </Folder>
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" Id="0d6fe6a9-d281-4e88-b280-46963e1e0a5d" />
+  <Project Path="_51.ListBoxPractice/_51.ListBoxPractice.csproj" Id="c84d71eb-e635-4383-ba24-079dd6dfc9fc" />
 </Solution>

@@ -7,6 +7,7 @@ namespace _49.TemplateBindingExercise
 {
     public class MainWindowViewModel:ObservableObject
     {
-        public Person CurrentPerson { get; set; }
+        public Person CurrentPerson { get; set; }=new Person() { Name="George",Age=52,Address="汉口春天"};
+
     }
 }

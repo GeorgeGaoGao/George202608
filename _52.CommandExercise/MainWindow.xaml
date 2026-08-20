@@ -1,0 +1,44 @@
+﻿<Window x:Class="_52.CommandExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_52.CommandExercise"
+        mc:Ignorable="d" FontSize="20"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <RoutedUICommand x:Key="PlayCommand" Text="Play"/>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource PlayCommand}" 
+                        Executed="CommandBinding_Executed" CanExecute="CommandBinding_CanExecute"/>
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <MouseBinding Command="{StaticResource PlayCommand}"  Gesture="Control+WheelClick"/>
+        <KeyBinding Command="{StaticResource PlayCommand}" Gesture="Alt+s"/>
+    </Window.InputBindings>
+    <StackPanel>
+        <Button Margin="10" Content="事件驱动" Click="Button_Click"/>
+        <Button Margin="10" Content="绑定一个命令" Command="{Binding BindingACommand}"/>
+        <Button Margin="10" Content="string参数命令" Command="{Binding StringCommand}" CommandParameter="string 999"/>
+        <Button Margin="10" Content="Object参数命令" Command="{Binding ObjectCommand}">
+            <Button.CommandParameter>
+                <local:Person Age="52" Name="George"/>
+            </Button.CommandParameter>
+        </Button>
+        <Button Margin="10" Content="T参数命令" Command="{Binding TCommand}">
+            <Button.CommandParameter>
+                <local:Person Age="15" Name="YoungGeorge"/>
+            </Button.CommandParameter>
+        </Button>
+        <Button Content="{Binding Source={StaticResource PlayCommand},Path=Text}"  
+                Command="{StaticResource PlayCommand}" CommandParameter="this is a routeduicommand"/>
+        <MenuItem Command="{StaticResource PlayCommand}" CommandParameter="这是menuitem，它会自动显示RoutedUICommand.Text"
+                  HorizontalAlignment="Center"/>
+        <Button/>
+        <Button/>
+    </StackPanel>
+</Window>

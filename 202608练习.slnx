@@ -53,4 +53,5 @@
   <Project Path="GeorgeWpfDLL/GeorgeWpfDLL.csproj" Id="0d6fe6a9-d281-4e88-b280-46963e1e0a5d" />
   <Project Path="_51.ListBoxPractice/_51.ListBoxPractice.csproj" Id="c84d71eb-e635-4383-ba24-079dd6dfc9fc" />
   <Project Path="_52.CommandExercise/_52.CommandExercise.csproj" Id="d7e08d8a-35d5-45df-bf90-01a19d5d2d94" />
+  <Project Path="_53.ApplicationCommandsExercise/_53.ApplicationCommandsExercise.csproj" Id="c71d0e5f-a93f-4088-8500-4b519d49a1cd" />
 </Solution>

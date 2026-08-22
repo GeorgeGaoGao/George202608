@@ -54,4 +54,6 @@
   <Project Path="_51.ListBoxPractice/_51.ListBoxPractice.csproj" Id="c84d71eb-e635-4383-ba24-079dd6dfc9fc" />
   <Project Path="_52.CommandExercise/_52.CommandExercise.csproj" Id="d7e08d8a-35d5-45df-bf90-01a19d5d2d94" />
   <Project Path="_53.ApplicationCommandsExercise/_53.ApplicationCommandsExercise.csproj" Id="c71d0e5f-a93f-4088-8500-4b519d49a1cd" />
+  <Project Path="_54.DependencyPropertyExercise/_54.DependencyPropertyExercise.csproj" Id="572cc4a7-e3a8-4582-be91-e347bd553f86" />
+  <Project Path="_55.TrayControlExercise/_55.TrayControlExercise.csproj" Id="cd7c4b8e-725d-42fa-a03f-74a1385f2e72" />
 </Solution>

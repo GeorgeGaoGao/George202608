@@ -13,9 +13,14 @@
         <StackPanel>
             <TextBlock Text="什么是依赖属性" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <StackPanel Orientation="Horizontal">
-                <local:WidgetUserControl Icon="¥" Value="1234.50" Title="总销售额" Width="200" Height="100" BorderThickness="1" />
+                <local:WidgetUserControl x:Name="myWidget" Icon="¥" 
+                                          ValueTarget="100" Completed="myWidget_Completed"
+                                         local:SalesManager.Check="myWidget_Check"
+                                         Value="{Binding ElementName=mySlider, Path=Value}" Title="总销售额"  Width="200" Height="100" BorderThickness="1" />
                 <local:WidgetUserControl/>
             </StackPanel>
+            <Slider Name="mySlider" Minimum="0" Maximum="2000"  Height="20" IsSnapToTickEnabled="True"/>
+            <ListBox Name="myListBox" VerticalAlignment="Top" Width="400" Height="200"/>
         </StackPanel>
 
     </Grid>

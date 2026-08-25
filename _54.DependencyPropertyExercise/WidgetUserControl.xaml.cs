@@ -57,8 +57,60 @@ namespace _54.DependencyPropertyExercise
 
         // Using a DependencyProperty as the backing store for Value.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ValueProperty =
-            DependencyProperty.Register(nameof(Value), typeof(double), typeof(WidgetUserControl), new PropertyMetadata(0.0));
+            DependencyProperty.Register(nameof(Value), typeof(double), typeof(WidgetUserControl), 
+                new PropertyMetadata(0.0,
+                    new PropertyChangedCallback(OnValuePropertyChanged
+                        )));
+
+        private static void OnValuePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is WidgetUserControl control&&e.NewValue is double nowValue)
+            {
+                if (nowValue<control.ValueTarget)
+                {
+                    control.Icon = "%";
+                }
+                if (nowValue> control.ValueTarget)
+                {
+                    control.Icon = "%%";
+                }
+                if (nowValue>control.ValueTarget+49)
+                {
+                    control.RaiseCompletedEvent();
+                }
+            }
+
+        }
+
+        public double ValueTarget
+        {
+            get { return (double)GetValue(ValueTargetProperty); }
+            set { SetValue(ValueTargetProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ValueTarget.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ValueTargetProperty =
+            DependencyProperty.Register(nameof(ValueTarget), typeof(double), typeof(WidgetUserControl), new PropertyMetadata(0.0));
 
 
+
+        public static readonly RoutedEvent CompletedEvent = EventManager.RegisterRoutedEvent(
+            name: "CompletedEvent",
+            routingStrategy: RoutingStrategy.Bubble,
+            handlerType: typeof(RoutedEventHandler),
+            ownerType: typeof(WidgetUserControl)
+            );
+        public event RoutedEventHandler Completed
+        {
+            add { AddHandler(CompletedEvent, value); }
+            remove { RemoveHandler(CompletedEvent, value); }
+        }
+
+        public void RaiseCompletedEvent()
+        {
+            RoutedEventArgs eventArgs = new RoutedEventArgs(CompletedEvent);
+            RaiseEvent(eventArgs);
+           
+        }
     }
 }

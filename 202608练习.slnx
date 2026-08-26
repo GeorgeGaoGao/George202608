@@ -57,4 +57,5 @@
   <Project Path="_54.DependencyPropertyExercise/_54.DependencyPropertyExercise.csproj" Id="572cc4a7-e3a8-4582-be91-e347bd553f86" />
   <Project Path="_55.TrayControlExercise/_55.TrayControlExercise.csproj" Id="cd7c4b8e-725d-42fa-a03f-74a1385f2e72" />
   <Project Path="_56.RorateTransformExercise/_56.RorateTransformExercise.csproj" Id="f8886937-92e9-4c06-b061-7a213d01aabf" />
+  <Project Path="_57.BrushExercise/_57.BrushExercise.csproj" Id="cd16c253-e0bb-4303-b085-cba23f8c3469" />
 </Solution>

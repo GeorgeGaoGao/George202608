@@ -66,6 +66,36 @@
                         </Ellipse.Fill>
                     </Ellipse>
                 </Canvas>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <TextBox Width="600" Height="30" Margin="5" VerticalContentAlignment="Center">
+                        <TextBox.Resources>
+                            <VisualBrush x:Key="waterText"
+                                         Opacity="0.5"
+                                         AlignmentX="Left"
+                                         AlignmentY="Center"
+                                         TileMode="None"
+                                         Stretch="None"
+                                         >
+                                <VisualBrush.Visual>
+                                    <TextBlock Text="请输入画家名或画名" HorizontalAlignment="Left"/>
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </TextBox.Resources>
+                        <TextBox.Style>
+                            <Style TargetType="TextBox">
+                                <Style.Triggers>
+                                    <Trigger Property="Text" Value="{x:Null}">
+                                        <Setter Property="Background" Value="{StaticResource waterText}"/>
+                                    </Trigger>
+                                    <Trigger Property="Text" Value="">
+                                        <Setter Property="Background" Value="{StaticResource waterText}"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBox.Style>
+                    </TextBox>
+                    <Button Content="搜索名家名画" Margin="5"/>
+                </StackPanel>
             </Grid>
         </TabItem>
 

@@ -28,12 +28,12 @@ namespace _52.CommandExercise
 
         private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            //MessageBox.Show($"PlayCommand被执行了,从触发处被带进来的参数显示{e.Parameter}");
-            //if (this.DataContext is MainWindowViewModel vm)
-            //{
-            //    vm.OnCommandBinding_Executed(e.Parameter);
-            //}
-            Close();
+            MessageBox.Show($"PlayCommand被执行了,从触发处被带进来的参数显示{e.Parameter}");
+            if (this.DataContext is MainWindowViewModel vm)
+            {
+                vm.OnCommandBinding_Executed(e.Parameter);
+            }
+            //Close();
         }
 
         private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)

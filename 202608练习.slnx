@@ -58,4 +58,9 @@
   <Project Path="_55.TrayControlExercise/_55.TrayControlExercise.csproj" Id="cd7c4b8e-725d-42fa-a03f-74a1385f2e72" />
   <Project Path="_56.RorateTransformExercise/_56.RorateTransformExercise.csproj" Id="f8886937-92e9-4c06-b061-7a213d01aabf" />
   <Project Path="_57.BrushExercise/_57.BrushExercise.csproj" Id="cd16c253-e0bb-4303-b085-cba23f8c3469" />
+  <Project Path="_58.EffectExercise/_58.EffectExercise.csproj" Id="307bdc16-6a88-4ce0-9b2b-3eb9f1515ae2" />
+  <Project Path="_59.BlurEffectExercise/_59.BlurEffectExercise.csproj" Id="c648f1af-9218-4d0f-808d-249608eb6c72" />
+  <Project Path="_60.AnimationExercise/_60.AnimationExercise.csproj" Id="2a477816-b994-4b6b-b0a4-7960d4409c2a" />
+  <Project Path="_61.KeyFrameAnimationExercise/_61.KeyFrameAnimationExercise.csproj" Id="e14900d3-40dc-436a-b225-a39479fcb21e" />
+  <Project Path="_62.KeyFrameExercise2/_62.KeyFrameExercise2.csproj" Id="dc8dc82e-5a44-4d0a-a2aa-031e4ee206a6" />
 </Solution>

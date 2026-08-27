@@ -59,9 +59,9 @@
                     
                 </Image>
                 <Canvas Name="myCanvas" IsHitTestVisible="False">
-                    <Ellipse Name="myVisualEllipse" Width="200" Height="200" Stroke="Red" StrokeThickness="1">
+                    <Ellipse Name="myVisualEllipse" Width="200" Height="200" Stroke="Red" StrokeThickness="1" >
                         <Ellipse.Fill>
-                            <VisualBrush x:Name="myVisualBrush" ViewboxUnits="Absolute" Visual="{Binding ElementName=myImage}"/>
+                            <VisualBrush x:Name="myVisualBrush"  ViewboxUnits="Absolute" Visual="{Binding ElementName=myImage}"/>
 
                         </Ellipse.Fill>
                     </Ellipse>

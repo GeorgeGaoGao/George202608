@@ -1,0 +1,37 @@
+﻿<Window x:Class="_61.KeyFrameAnimationExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_61.KeyFrameAnimationExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="keyFrame">
+            <PointAnimationUsingKeyFrames Storyboard.TargetName="myEllipse" 
+                                          Storyboard.TargetProperty="Fill.GradientOrigin"
+                                          AutoReverse="True" RepeatBehavior="Forever">
+                <LinearPointKeyFrame KeyTime="0:0:0" Value="0.25 0.25"/>
+                <LinearPointKeyFrame KeyTime="0:0:1" Value="0.75 0.25"/>
+                <LinearPointKeyFrame KeyTime="0:0:2" Value="0.25 0.75"/>
+                <LinearPointKeyFrame KeyTime="0:0:3" Value="0.75 0.75"/>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Grid Name="myGrid" Background="Transparent" >
+        <Ellipse Name="myEllipse" Width="300" Height="300" >
+            <Ellipse.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard Storyboard="{StaticResource keyFrame}" />
+                </EventTrigger>
+            </Ellipse.Triggers>
+            <Ellipse.Fill>
+                <RadialGradientBrush RadiusX="0.75" RadiusY="0.75" GradientOrigin="0.25 0.25">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="Goldenrod" Offset="0.65"/>
+                    <GradientStop Color="Gray" Offset="0.8"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+</Window>

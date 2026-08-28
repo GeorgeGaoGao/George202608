@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Border Name="myBorder" MouseLeftButtonUp="myBorder_MouseLeftButtonUp">
+        <Border Name="myBorder" MouseUp="myBorder_MouseUp">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.1 0.8" EndPoint="0.8 0.2">
                     <GradientStop Color="LightBlue" Offset="0"/>

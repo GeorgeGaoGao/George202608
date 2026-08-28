@@ -22,27 +22,31 @@ namespace _63.KeyFrameInCode
             InitializeComponent();
         }
 
-        private void myBorder_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void myBorder_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            LinearGradientBrush brush=myBorder.Background as LinearGradientBrush;
-            PointAnimationUsingKeyFrames startPointAnimation = new PointAnimationUsingKeyFrames();
-            PointAnimationUsingKeyFrames endPointAnimation = new PointAnimationUsingKeyFrames();
+            LinearGradientBrush brush = myBorder.Background as LinearGradientBrush;
 
-            Random random=new Random();
-            double x=random.NextDouble();
-            Thread.Sleep(1);
-            double y=random.NextDouble();
-            PointKeyFrame startKeyFrame = new LinearPointKeyFrame(new Point(x, y), new TimeSpan(0, 0, 2));
-            startPointAnimation.KeyFrames.Add(startKeyFrame);
+            PointAnimationUsingKeyFrames startPointAnimation= new PointAnimationUsingKeyFrames();
+            PointAnimationUsingKeyFrames endPointAnimation= new PointAnimationUsingKeyFrames();
+            LinearPointKeyFrame keyFrameStart= new LinearPointKeyFrame();
+            LinearPointKeyFrame keyFrameEnd= new LinearPointKeyFrame();
+            startPointAnimation.KeyFrames.Add(keyFrameStart);
+            endPointAnimation.KeyFrames.Add(keyFrameEnd);
 
-            x=random.NextDouble();
-            Thread.Sleep(1);
-            y=random.NextDouble();
-            PointKeyFrame endKeyFrame = new LinearPointKeyFrame(new Point(x, y), new TimeSpan(0, 0, 3));
-            startPointAnimation.KeyFrames.Add(endKeyFrame);
+            Random random= new Random();
+            double x = random.NextDouble();
+            double y = random.NextDouble();
+            keyFrameStart.KeyTime = TimeSpan.FromMilliseconds(1500);
+            keyFrameStart.Value=new Point(x, y);
+
+            x= random.NextDouble();
+            y= random.NextDouble();
+            keyFrameEnd.KeyTime = TimeSpan.FromMilliseconds(1500);
+            keyFrameEnd.Value=new Point(x, y);
 
             brush.BeginAnimation(LinearGradientBrush.StartPointProperty, startPointAnimation);
             brush.BeginAnimation(LinearGradientBrush.EndPointProperty, endPointAnimation);
+
         }
     }
 }
